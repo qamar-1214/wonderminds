@@ -1,0 +1,397 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Custom violet theme colors */
+  --color-violet-100: #ede9fe;
+  --color-violet-500: #8b5cf6;
+  --gradient-violet: linear-gradient(135deg, #7c3aed, #a78bfa);
+
+  /* Website Theme Colors */
+  --color-green: #4caf50; /* Primary green */
+  --color-red: #f44336; /* Primary red */
+  --color-pink: #e91e63; /* Primary pink */
+  --color-blue-dark: #1976d2; /* Dark blue */
+  --color-blue-light: #2196f3; /* Light blue */
+
+  /* Theme Color Classes */
+  --color-green-50: #e8f5e8;
+  --color-green-100: #c8e6c9;
+  --color-green-500: #4caf50;
+  --color-green-600: #43a047;
+  --color-green-700: #388e3c;
+
+  --color-red-50: #ffebee;
+  --color-red-100: #ffcdd2;
+  --color-red-500: #f44336;
+  --color-red-600: #e53935;
+  --color-red-700: #d32f2f;
+
+  --color-pink-50: #fce4ec;
+  --color-pink-100: #f8bbd9;
+  --color-pink-500: #e91e63;
+  --color-pink-600: #d81b60;
+  --color-pink-700: #c2185b;
+
+  --color-blue-dark-50: #e3f2fd;
+  --color-blue-dark-100: #bbdefb;
+  --color-blue-dark-500: #1976d2;
+  --color-blue-dark-600: #1565c0;
+  --color-blue-dark-700: #0d47a1;
+
+  --color-blue-light-50: #e1f5fe;
+  --color-blue-light-100: #b3e5fc;
+  --color-blue-light-500: #2196f3;
+  --color-blue-light-600: #1e88e5;
+  --color-blue-light-700: #1976d2;
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.556 0.17 162.48); /* Green primary */
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325); /* Red destructive */
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.556 0.17 162.48); /* Green ring */
+  --chart-1: oklch(0.556 0.17 162.48); /* Green */
+  --chart-2: oklch(0.577 0.245 27.325); /* Red */
+  --chart-3: oklch(0.696 0.17 162.48); /* Pink */
+  --chart-4: oklch(0.488 0.243 264.376); /* Dark Blue */
+  --chart-5: oklch(0.627 0.265 303.9); /* Light Blue */
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.488 0.243 264.376);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Completely prevent individual sections from scrolling */
+  section {
+    overflow: visible !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+  }
+
+  /* Ensure main content area handles all scrolling */
+  main {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* Remove all fixed heights that cause section scrolling */
+  .min-h-screen {
+    min-height: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Force all overflow classes to be visible */
+  .overflow-y-auto,
+  .overflow-y-scroll,
+  .overflow-auto,
+  .overflow-scroll {
+    overflow: visible !important;
+  }
+
+  /* Remove problematic height constraints: allow components to control their own heights */
+  .h-full,
+  .h-screen {
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  /* Ensure containers don't create scroll */
+  .container {
+    max-width: 100%;
+    overflow: visible !important;
+  }
+
+  /* Fix grid and flex containers */
+  .grid,
+  .flex {
+    overflow: visible !important;
+  }
+
+  /* Custom utility classes */
+  .font-heading {
+    font-family: var(--font-poppins), sans-serif;
+  }
+
+  .font-body {
+    font-family: var(--font-inter), sans-serif;
+  }
+
+  .bg-dotted {
+    background-image: radial-gradient(
+      circle,
+      rgba(139, 92, 246, 0.1) 1px,
+      transparent 1px
+    );
+    background-size: 20px 20px;
+  }
+
+  .gradient-violet {
+    background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  }
+
+  .gradient-violet-soft {
+    background: linear-gradient(135deg, #8b5cf6, #c4b5fd);
+  }
+
+  /* WonderMinds Logo Color Classes */
+  .text-wonder-orange {
+    color: var(--color-wonder-orange);
+  }
+
+  .text-minds-green {
+    color: var(--color-minds-green);
+  }
+
+  .bg-primary-purple {
+    background-color: var(--color-primary-purple);
+  }
+
+  .text-primary-purple {
+    color: var(--color-primary-purple);
+  }
+
+  .bg-accent-blue {
+    background-color: var(--color-accent-blue);
+  }
+
+  .text-accent-blue {
+    color: var(--color-accent-blue);
+  }
+
+  .bg-accent-pink {
+    background-color: var(--color-accent-pink);
+  }
+
+  .text-accent-pink {
+    color: var(--color-accent-pink);
+  }
+
+  .gradient-wonder-minds {
+    background: linear-gradient(
+      135deg,
+      var(--color-wonder-orange),
+      var(--color-minds-green)
+    );
+  }
+
+  /* Website Theme Color Classes */
+  .bg-theme-green {
+    background-color: var(--color-green);
+  }
+  .text-theme-green {
+    color: var(--color-green);
+  }
+  .border-theme-green {
+    border-color: var(--color-green);
+  }
+
+  .bg-theme-red {
+    background-color: var(--color-red);
+  }
+  .text-theme-red {
+    color: var(--color-red);
+  }
+  .border-theme-red {
+    border-color: var(--color-red);
+  }
+
+  .bg-theme-pink {
+    background-color: var(--color-pink);
+  }
+  .text-theme-pink {
+    color: var(--color-pink);
+  }
+  .border-theme-pink {
+    border-color: var(--color-pink);
+  }
+
+  .bg-theme-blue-dark {
+    background-color: var(--color-blue-dark);
+  }
+  .text-theme-blue-dark {
+    color: var(--color-blue-dark);
+  }
+  .border-theme-blue-dark {
+    border-color: var(--color-blue-dark);
+  }
+
+  .bg-theme-blue-light {
+    background-color: var(--color-blue-light);
+  }
+  .text-theme-blue-light {
+    color: var(--color-blue-light);
+  }
+  .border-theme-blue-light {
+    border-color: var(--color-blue-light);
+  }
+
+  /* Theme Gradients */
+  .gradient-theme-green {
+    background: linear-gradient(
+      135deg,
+      var(--color-green-500),
+      var(--color-green-600)
+    );
+  }
+
+  .gradient-theme-red {
+    background: linear-gradient(
+      135deg,
+      var(--color-red-500),
+      var(--color-red-600)
+    );
+  }
+
+  .gradient-theme-pink {
+    background: linear-gradient(
+      135deg,
+      var(--color-pink-500),
+      var(--color-pink-600)
+    );
+  }
+
+  .gradient-theme-blue-dark {
+    background: linear-gradient(
+      135deg,
+      var(--color-blue-dark-500),
+      var(--color-blue-dark-600)
+    );
+  }
+
+  .gradient-theme-blue-light {
+    background: linear-gradient(
+      135deg,
+      var(--color-blue-light-500),
+      var(--color-blue-light-600)
+    );
+  }
+
+  @layer components {
+    .btn-primary {
+      @apply bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+    }
+
+    .btn-secondary {
+      @apply border border-green-500 hover:border-green-600 hover:bg-green-50 text-green-600 font-medium px-6 py-3 rounded-lg transition-all duration-200;
+    }
+
+    .btn-red {
+      @apply bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+    }
+
+    .btn-pink {
+      @apply bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+    }
+
+    .btn-blue-dark {
+      @apply bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+    }
+
+    .btn-blue-light {
+      @apply bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+    }
+  }
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+  }
+
+  .animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+  }
+}
