@@ -237,6 +237,7 @@ const About = () => {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
               className="space-y-8"
             >
               <div className="flex items-center space-x-4">
@@ -265,6 +266,7 @@ const About = () => {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                     className="flex items-center space-x-4"
                   >
                     <CheckCircle className="h-6 w-6 text-green-600" />
@@ -281,6 +283,7 @@ const About = () => {
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
               className="relative"
             >
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
@@ -306,6 +309,7 @@ const About = () => {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
               className="relative lg:order-1 order-2"
             >
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
@@ -324,6 +328,7 @@ const About = () => {
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
               className="space-y-8 lg:order-2 order-1"
             >
               <div className="flex items-center space-x-4">
@@ -345,6 +350,7 @@ const About = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
+                  viewport={{ once: true }}
                   className="p-6 bg-green-50 rounded-xl border border-green-100"
                 >
                   <h3 className="font-heading text-lg font-semibold text-green-800 mb-2">
@@ -359,6 +365,7 @@ const About = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }}
                   className="p-6 bg-green-50 rounded-xl border border-green-100"
                 >
                   <h3 className="font-heading text-lg font-semibold text-green-800 mb-2">
@@ -382,6 +389,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -473,6 +481,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -491,6 +500,7 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
                 <Card className="h-full min-h-[300px] text-center hover:shadow-lg transition-shadow duration-300 flex flex-col">
@@ -521,6 +531,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -575,6 +586,7 @@ const About = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
                   whileHover={{ y: -5 }}
                 >
                   <Card
@@ -616,6 +628,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
@@ -658,6 +671,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -676,6 +690,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
             <Accordion type="single" collapsible className="space-y-4">
@@ -781,6 +796,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center space-y-6"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">

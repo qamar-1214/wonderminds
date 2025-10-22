@@ -87,6 +87,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -142,6 +143,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -164,6 +166,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -186,6 +189,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -309,6 +313,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -363,6 +368,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center space-y-6"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">

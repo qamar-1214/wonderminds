@@ -74,6 +74,7 @@ const Footer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             className="flex justify-center lg:justify-start"
           >
             <Link href="/">
@@ -83,6 +84,8 @@ const Footer = () => {
                 width={1000}
                 height={500}
                 className="w-auto h-auto"
+                quality={90}
+                sizes="(max-width: 768px) 250px, 400px"
               />
             </Link>
           </motion.div>
@@ -92,6 +95,7 @@ const Footer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
             className="space-y-2"
           >
             <h3 className="font-heading font-semibold text-lg text-foreground">
@@ -116,6 +120,7 @@ const Footer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
             className="space-y-2"
           >
             <h3 className="font-heading font-semibold text-lg text-foreground">
@@ -140,6 +145,7 @@ const Footer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
             className="space-y-2"
           >
             <h3 className="font-heading font-semibold text-lg text-foreground">
@@ -181,6 +187,7 @@ const Footer = () => {
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                     whileHover={{ scale: 1.1, y: -2 }}
                     className={`p-2 rounded-lg ${social.bgColor} ${social.hoverBgColor} ${social.textColor} transition-all duration-300 shadow-md hover:shadow-lg`}
                     aria-label={social.name}
@@ -198,6 +205,7 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
           className="mt-6 pt-6 border-t border-border"
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">

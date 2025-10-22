@@ -56,8 +56,10 @@ const Header = () => {
                 alt="WonderMinds Logo"
                 width={800}
                 height={320}
-                className="w-auto h-40"
+                className="w-auto h-12 md:h-14"
                 priority
+                quality={90}
+                sizes="(max-width: 768px) 150px, 200px"
               />
             </Link>
           </motion.div>

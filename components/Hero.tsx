@@ -124,6 +124,8 @@ const Hero = () => {
               fill
               className="object-cover"
               priority={index === 0}
+              quality={85}
+              sizes="100vw"
             />
           </motion.div>
         ))}
@@ -224,6 +226,8 @@ const Hero = () => {
                 fill
                 className="object-cover"
                 priority
+                quality={85}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 onError={(e) => {
                   console.log("Image failed to load:", e);
                 }}

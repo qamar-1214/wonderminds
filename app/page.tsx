@@ -241,6 +241,7 @@ const Home = () => {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
               className="space-y-6"
             >
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
@@ -264,6 +265,7 @@ const Home = () => {
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                     className="flex items-center space-x-3"
                   >
                     <CheckCircle className="h-5 w-5 text-theme-green" />
@@ -283,6 +285,7 @@ const Home = () => {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
               className="relative"
             >
               <div className="relative w-full h-96 rounded-2xl overflow-hidden">
@@ -322,6 +325,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -340,6 +344,7 @@ const Home = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 overflow-hidden">
@@ -382,6 +387,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -404,6 +410,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
             className="text-center mt-12"
           >
             <Button asChild size="lg" className="btn-primary">
@@ -423,6 +430,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -445,6 +453,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
             className="text-center mt-12"
           >
             <Button asChild size="lg" className="btn-secondary">
@@ -464,6 +473,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
@@ -482,6 +492,7 @@ const Home = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
                 className="text-center"
               >
                 <div className="text-4xl md:text-5xl font-bold text-white font-heading mb-2">
@@ -503,6 +514,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -519,6 +531,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
             <Accordion type="single" collapsible className="space-y-4">
@@ -624,6 +637,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-center space-y-6"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">

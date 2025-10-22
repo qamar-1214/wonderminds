@@ -653,6 +653,7 @@ const ServicesContent = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                     className="text-center"
                   >
                     <div
@@ -740,6 +741,7 @@ const ServicesContent = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                     whileHover={{ y: -5 }}
                   >
                     <Card className="h-full text-center hover:shadow-lg transition-shadow duration-300">
@@ -896,6 +898,7 @@ const ServicesContent = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                     className="text-center"
                   >
                     <div className="bg-gradient-to-r from-emerald-400 to-teal-500 rounded-2xl p-6 text-white">
@@ -935,6 +938,7 @@ const ServicesContent = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                     whileHover={{ y: -5 }}
                     className="h-full flex flex-col"
                   >
@@ -1001,6 +1005,7 @@ const ServicesContent = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                     whileHover={{ y: -5 }}
                   >
                     <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-l-4 border-emerald-500">
