@@ -103,8 +103,9 @@ const GalleryGrid = ({
                 alt={image.alt}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-                placeholder="empty"
+                loading={index < 6 ? "eager" : "lazy"}
+                quality={85}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
 
               {/* Overlay */}

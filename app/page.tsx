@@ -294,8 +294,9 @@ const Home = () => {
                   alt="Children learning at WonderMinds"
                   fill
                   className="object-cover"
-                  loading="lazy"
-                  placeholder="empty"
+                  loading="eager"
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
@@ -357,8 +358,9 @@ const Home = () => {
                       alt={feature.title}
                       fill
                       className="object-cover"
-                      loading="lazy"
-                      placeholder="empty"
+                      loading={index < 2 ? "eager" : "lazy"}
+                      quality={85}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                     {/* Icon overlay */}
