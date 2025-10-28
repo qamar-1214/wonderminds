@@ -222,7 +222,7 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: 500, label: "Happy Students", suffix: "+" },
+    { number: 1000, label: "Happy Students", suffix: "+" },
     { number: 15, label: "Years Experience", suffix: "+" },
     { number: 98, label: "Parent Satisfaction", suffix: "%" },
     { number: 4.9, label: "Average Rating" },
@@ -294,6 +294,8 @@ const Home = () => {
                   alt="Children learning at WonderMinds"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  placeholder="empty"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
@@ -355,6 +357,8 @@ const Home = () => {
                       alt={feature.title}
                       fill
                       className="object-cover"
+                      loading="lazy"
+                      placeholder="empty"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                     {/* Icon overlay */}

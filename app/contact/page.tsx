@@ -27,7 +27,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
-import AppointmentForm from "@/components/AppointmentForm";
+import VisitForm from "@/components/VisitForm";
 
 const Contact = () => {
   const quickActions = [
@@ -49,7 +49,7 @@ const Contact = () => {
       icon: Phone,
       title: "Call Us",
       description: "Speak directly with our admissions team.",
-      href: "tel:+15551234567",
+      href: "tel:+966510532513",
       color: "bg-green-500 hover:bg-green-600",
     },
   ];
@@ -105,6 +105,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
                 <Card className="h-full text-center hover:shadow-lg transition-shadow duration-300">
@@ -178,7 +179,7 @@ const Contact = () => {
             </p>
           </motion.div>
 
-          <AppointmentForm />
+          <VisitForm />
         </div>
       </section>
 
@@ -208,6 +209,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
             <Accordion type="single" collapsible className="space-y-4">
@@ -329,32 +331,35 @@ const Contact = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
             <Card className="overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-violet-100 to-purple-100 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <MapPin className="h-12 w-12 text-violet-600 mx-auto" />
-                  <div>
-                    <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
-                      Interactive Map
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      123 Education Street, Learning City, LC 12345
-                    </p>
-                    <Button asChild className="btn-primary">
-                      <Link
-                        href="https://maps.google.com/?q=123+Education+Street+Learning+City+LC+12345"
-                        target="_blank"
-                      >
-                        Get Directions
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
+              <div className="relative">
+                <iframe
+                  title="WonderMinds Location"
+                  src="https://www.google.com/maps?q=26.352623,50.199097&z=16&output=embed"
+                  className="w-full aspect-video border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                <div className="p-4 flex items-center justify-between bg-background border-t">
+                  <div className="flex items-center space-x-3">
+                    <MapPin className="h-5 w-5 text-violet-600" />
+                    <span className="text-sm text-muted-foreground">
+                      Ferdaws Mosque, Al Khobar, SA
+                    </span>
                   </div>
+                  <Button asChild className="btn-primary">
+                    <Link
+                      href="https://maps.google.com/?q=26.352623,50.199097"
+                      target="_blank"
+                    >
+                      Open in Google Maps
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
                 </div>
-                {/* Note: Replace with actual map when available */}
-                <div className="absolute inset-0 bg-black/10" />
               </div>
             </Card>
           </motion.div>
@@ -391,9 +396,8 @@ const Contact = () => {
               </Button>
               <Button
                 asChild
-                variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white/10"
+                className="bg-emerald-500 hover:bg-emerald-600 text-white"
               >
                 <Link href="/programs">View Programs</Link>
               </Button>

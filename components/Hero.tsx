@@ -91,7 +91,7 @@ const Hero = () => {
   }, [backgroundImages.length]);
 
   const stats = [
-    { icon: Users, value: 500, label: "Happy Students", suffix: "+" },
+    { icon: Users, value: 1000, label: "Happy Students", suffix: "+" },
     { icon: Star, value: 4.9, label: "Rating" },
     { icon: BookOpen, value: 15, label: "Years Experience", suffix: "+" },
   ];
@@ -126,6 +126,7 @@ const Hero = () => {
               priority={index === 0}
               quality={85}
               sizes="100vw"
+              placeholder="empty"
             />
           </motion.div>
         ))}
@@ -168,7 +169,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button asChild size="lg" className="btn-primary group">
-                <Link href="/contact">
+                <Link href="/booking">
                   Book Appointment
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
@@ -228,6 +229,7 @@ const Hero = () => {
                 priority
                 quality={85}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="empty"
                 onError={(e) => {
                   console.log("Image failed to load:", e);
                 }}
@@ -265,7 +267,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Community</div>
-                  <div className="text-sm text-gray-600">500+ Families</div>
+                  <div className="text-sm text-gray-600">1000+ Families</div>
                 </div>
               </div>
             </motion.div>

@@ -9,7 +9,7 @@ import {
   MessageSquare,
   Instagram,
   Facebook,
-  Twitter,
+  MapPin,
 } from "lucide-react";
 
 const FloatingChat = () => {
@@ -19,30 +19,30 @@ const FloatingChat = () => {
     {
       name: "WhatsApp",
       icon: MessageCircle,
-      href: "https://wa.me/1234567890", // Replace with actual WhatsApp number
+      href: "https://wa.me/966510532513",
       color: "bg-green-500 hover:bg-green-600",
-      description: "Chat with us on WhatsApp",
+      description: "+966 51 053 2513",
     },
     {
       name: "Instagram",
       icon: Instagram,
-      href: "https://instagram.com/wonderminds", // Replace with actual Instagram
+      href: "https://www.instagram.com/wonderminds07/",
       color: "bg-pink-500 hover:bg-pink-600",
-      description: "Follow us on Instagram",
+      description: "@wonderminds07",
     },
     {
-      name: "Messenger",
+      name: "Facebook",
       icon: Facebook,
-      href: "https://m.me/wonderminds", // Replace with actual Messenger
-      color: "bg-blue-500 hover:bg-blue-600",
-      description: "Message us on Facebook",
+      href: "https://www.facebook.com/share/17E712AFgE/",
+      color: "bg-blue-600 hover:bg-blue-700",
+      description: "Find us on Facebook",
     },
     {
-      name: "Twitter",
-      icon: Twitter,
-      href: "https://twitter.com/wonderminds", // Replace with actual Twitter
-      color: "bg-sky-500 hover:bg-sky-600",
-      description: "Connect with us on Twitter",
+      name: "Location",
+      icon: MapPin,
+      href: "https://maps.google.com/?q=26.352623,50.199097",
+      color: "bg-violet-600 hover:bg-violet-700",
+      description: "Ferdaws Mosque, Al Khobar, SA",
     },
   ];
 

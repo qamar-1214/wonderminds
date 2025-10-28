@@ -96,6 +96,7 @@ const ContactForm = () => {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="space-y-6 flex flex-col"
         >
           {/* Email Card */}
@@ -103,6 +104,7 @@ const ContactForm = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
             whileHover={{ scale: 1.02, y: -5 }}
             className="group flex-1"
           >
@@ -127,6 +129,7 @@ const ContactForm = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
             whileHover={{ scale: 1.02, y: -5 }}
             className="group flex-1"
           >
@@ -149,6 +152,7 @@ const ContactForm = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
             whileHover={{ scale: 1.02, y: -5 }}
             className="group flex-1"
           >
@@ -174,6 +178,7 @@ const ContactForm = () => {
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="h-full"
         >
           <Card className="h-full bg-white border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden">
@@ -185,6 +190,7 @@ const ContactForm = () => {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
+                    viewport={{ once: true }}
                     className="space-y-2"
                   >
                     <label
@@ -211,6 +217,7 @@ const ContactForm = () => {
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
+                    viewport={{ once: true }}
                     className="space-y-2"
                   >
                     <label
@@ -237,6 +244,7 @@ const ContactForm = () => {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
                     className="space-y-2"
                   >
                     <label
@@ -262,6 +270,7 @@ const ContactForm = () => {
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
+                    viewport={{ once: true }}
                     className="space-y-2"
                   >
                     <label
@@ -327,6 +336,7 @@ const ContactForm = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
+                    viewport={{ once: true }}
                     className="pt-4"
                   >
                     <Button

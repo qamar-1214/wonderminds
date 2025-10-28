@@ -3,6 +3,7 @@ import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingChat from "@/components/FloatingChat";
 // import { PerformanceOptimizer } from "@/components/PerformanceOptimizer";
 
 const poppins = Poppins({
@@ -62,11 +63,13 @@ export default function RootLayout({
       </head>
       <body
         className={`${poppins.variable} ${inter.variable} font-sans antialiased`}
+        suppressHydrationWarning
       >
         {/* <PerformanceOptimizer /> */}
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <FloatingChat />
       </body>
     </html>
   );

@@ -138,8 +138,8 @@ const ServicesContent = () => {
         },
       ],
       stats: [
-        { label: "Children Helped", value: 150, suffix: "+" },
-        { label: "Success Rate", value: 92, suffix: "%" },
+        { label: "Children Helped", value: 2000, suffix: "+" },
+        { label: "Success Rate", value: 97, suffix: "%" },
         { label: "Sessions Completed", value: 3000, suffix: "+" },
         { label: "Parent Satisfaction", value: 98, suffix: "%" },
       ],
@@ -193,8 +193,8 @@ const ServicesContent = () => {
         },
       ],
       stats: [
-        { label: "Children Helped", value: 120, suffix: "+" },
-        { label: "Success Rate", value: 89, suffix: "%" },
+        { label: "Children Helped", value: 2000, suffix: "+" },
+        { label: "Success Rate", value: 97, suffix: "%" },
         { label: "Sessions Completed", value: 2500, suffix: "+" },
         { label: "Parent Satisfaction", value: 96, suffix: "%" },
       ],
@@ -244,8 +244,8 @@ const ServicesContent = () => {
         },
       ],
       stats: [
-        { label: "Children Helped", value: 180, suffix: "+" },
-        { label: "Success Rate", value: 94, suffix: "%" },
+        { label: "Children Helped", value: 2000, suffix: "+" },
+        { label: "Success Rate", value: 97, suffix: "%" },
         { label: "Sessions Completed", value: 4000, suffix: "+" },
         { label: "Parent Satisfaction", value: 97, suffix: "%" },
       ],
@@ -295,8 +295,8 @@ const ServicesContent = () => {
         },
       ],
       stats: [
-        { label: "Children Helped", value: 200, suffix: "+" },
-        { label: "Success Rate", value: 88, suffix: "%" },
+        { label: "Children Helped", value: 2000, suffix: "+" },
+        { label: "Success Rate", value: 97, suffix: "%" },
         { label: "Sessions Completed", value: 3500, suffix: "+" },
         { label: "Parent Satisfaction", value: 95, suffix: "%" },
       ],
@@ -347,8 +347,8 @@ const ServicesContent = () => {
         },
       ],
       stats: [
-        { label: "Families Helped", value: 300, suffix: "+" },
-        { label: "Success Rate", value: 91, suffix: "%" },
+        { label: "Families Helped", value: 2000, suffix: "+" },
+        { label: "Success Rate", value: 97, suffix: "%" },
         { label: "Workshops Conducted", value: 150, suffix: "+" },
         { label: "Parent Satisfaction", value: 96, suffix: "%" },
       ],
@@ -399,7 +399,7 @@ const ServicesContent = () => {
         },
       ],
       stats: [
-        { label: "Assessments Completed", value: 400, suffix: "+" },
+        { label: "Assessments Completed", value: 2000, suffix: "+" },
         { label: "Accuracy Rate", value: 95, suffix: "%" },
         { label: "Follow-up Support", value: 100, suffix: "%" },
         { label: "Parent Satisfaction", value: 98, suffix: "%" },
@@ -519,7 +519,7 @@ const ServicesContent = () => {
   ];
 
   const stats = [
-    { label: "Children Helped", value: 500, suffix: "+" },
+    { label: "Children Helped", value: 1000, suffix: "+" },
     { label: "Therapy Sessions", value: 10000, suffix: "+" },
     { label: "Parent Workshops", value: 200, suffix: "+" },
     { label: "Success Rate", value: 95, suffix: "%" },
@@ -601,6 +601,7 @@ const ServicesContent = () => {
                     fill
                     className="object-cover"
                     priority
+                    placeholder="empty"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                 </div>
@@ -677,6 +678,7 @@ const ServicesContent = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="text-center mb-12"
               >
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -701,6 +703,7 @@ const ServicesContent = () => {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                     className="flex items-center space-x-3"
                   >
                     <CheckCircle className="h-5 w-5 text-emerald-500 flex-shrink-0" />
@@ -718,6 +721,7 @@ const ServicesContent = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="text-center mb-12"
               >
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -776,6 +780,7 @@ const ServicesContent = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="text-center mb-12"
               >
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -797,6 +802,7 @@ const ServicesContent = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
+                  viewport={{ once: true }}
                   className="text-center"
                 >
                   <div
@@ -817,6 +823,7 @@ const ServicesContent = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
+                  viewport={{ once: true }}
                   className="text-center"
                 >
                   <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -835,9 +842,10 @@ const ServicesContent = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }}
                   className="text-center"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-r from-mint-500 to-mint-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Star className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="font-heading text-xl font-semibold mb-2">
@@ -859,6 +867,7 @@ const ServicesContent = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="text-center"
               >
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -920,6 +929,7 @@ const ServicesContent = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="text-center mb-12"
               >
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -986,6 +996,7 @@ const ServicesContent = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="text-center mb-12"
               >
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -1070,6 +1081,7 @@ const ServicesContent = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="text-center"
               >
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">

@@ -143,6 +143,7 @@ const AppointmentForm = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
         className="w-full"
       >
         <Card className="bg-white border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden">
@@ -154,6 +155,7 @@ const AppointmentForm = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
+                  viewport={{ once: true }}
                   className="space-y-6"
                 >
                   <div className="flex items-center space-x-3 mb-4">
@@ -170,6 +172,7 @@ const AppointmentForm = () => {
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, delay: 0.2 }}
+                      viewport={{ once: true }}
                       className="space-y-2"
                     >
                       <label
@@ -248,6 +251,7 @@ const AppointmentForm = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
+                  viewport={{ once: true }}
                   className="space-y-6"
                 >
                   <div className="flex items-center space-x-3 mb-4">
@@ -264,6 +268,7 @@ const AppointmentForm = () => {
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, delay: 0.6 }}
+                      viewport={{ once: true }}
                       className="space-y-2"
                     >
                       <label
@@ -322,6 +327,7 @@ const AppointmentForm = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
+                  viewport={{ once: true }}
                   className="space-y-6"
                 >
                   <div className="flex items-center space-x-3 mb-4">
@@ -337,6 +343,7 @@ const AppointmentForm = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.9 }}
+                    viewport={{ once: true }}
                     className="space-y-2"
                   >
                     <label
@@ -362,6 +369,7 @@ const AppointmentForm = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 1.0 }}
+                    viewport={{ once: true }}
                     className="space-y-2"
                   >
                     <label
@@ -388,6 +396,7 @@ const AppointmentForm = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 1.1 }}
+                  viewport={{ once: true }}
                   className="space-y-6"
                 >
                   <div className="flex items-center space-x-3 mb-4">
@@ -403,6 +412,7 @@ const AppointmentForm = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 1.2 }}
+                    viewport={{ once: true }}
                     className="space-y-2"
                   >
                     <label
@@ -429,6 +439,7 @@ const AppointmentForm = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 1.3 }}
+                    viewport={{ once: true }}
                     className="space-y-2"
                   >
                     <label
@@ -494,6 +505,7 @@ const AppointmentForm = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 1.4 }}
+                  viewport={{ once: true }}
                   className="pt-6"
                 >
                   <Button

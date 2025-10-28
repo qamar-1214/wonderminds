@@ -166,7 +166,7 @@ const About = () => {
   ];
 
   const achievements = [
-    { number: 500, label: "Happy Students", suffix: "+" },
+    { number: 1000, label: "Happy Students", suffix: "+" },
     { number: 15, label: "Years Experience", suffix: "+" },
     { number: 98, label: "Parent Satisfaction", suffix: "%" },
     { number: 4.9, label: "Average Rating" },
@@ -202,6 +202,7 @@ const About = () => {
                 fill
                 className="object-cover"
                 priority={index === 0}
+                placeholder="empty"
               />
             </motion.div>
           ))}
@@ -292,6 +293,8 @@ const About = () => {
                   alt="Children learning together in classroom"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  placeholder="empty"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
@@ -318,6 +321,8 @@ const About = () => {
                   alt="Children playing and learning in outdoor environment"
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  placeholder="empty"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
@@ -407,6 +412,7 @@ const About = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
               className="relative group overflow-hidden rounded-2xl shadow-lg"
             >
               <Image
@@ -415,6 +421,8 @@ const About = () => {
                 width={400}
                 height={300}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="empty"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -430,6 +438,7 @@ const About = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
               className="relative group overflow-hidden rounded-2xl shadow-lg"
             >
               <Image
@@ -438,6 +447,8 @@ const About = () => {
                 width={400}
                 height={300}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="empty"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -453,6 +464,7 @@ const About = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
               className="relative group overflow-hidden rounded-2xl shadow-lg"
             >
               <Image
@@ -461,6 +473,8 @@ const About = () => {
                 width={400}
                 height={300}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                placeholder="empty"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -647,6 +661,7 @@ const About = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
                 className="text-center"
               >
                 <div className="text-4xl md:text-5xl font-bold text-white font-heading mb-2">

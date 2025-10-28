@@ -74,6 +74,7 @@ const GalleryGrid = ({
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
         className="text-center space-y-4"
       >
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
@@ -92,6 +93,7 @@ const GalleryGrid = ({
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
             whileHover={{ scale: 1.02 }}
             className="group relative overflow-hidden rounded-xl bg-muted/50"
           >
@@ -101,6 +103,8 @@ const GalleryGrid = ({
                 alt={image.alt}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                placeholder="empty"
               />
 
               {/* Overlay */}
@@ -179,6 +183,8 @@ const GalleryGrid = ({
                     fill
                     className="object-contain"
                     priority
+                    quality={90}
+                    placeholder="empty"
                   />
                 </div>
 

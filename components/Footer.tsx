@@ -7,7 +7,6 @@ import {
   MessageCircle,
   Instagram,
   Facebook,
-  Twitter,
   Mail,
   Phone,
   MapPin,
@@ -18,7 +17,7 @@ const Footer = () => {
     {
       name: "WhatsApp",
       icon: MessageCircle,
-      href: "https://wa.me/1234567890", // Replace with actual WhatsApp number
+      href: "https://wa.me/966510532513",
       bgColor: "bg-green-500",
       hoverBgColor: "hover:bg-green-600",
       textColor: "text-white",
@@ -26,25 +25,17 @@ const Footer = () => {
     {
       name: "Instagram",
       icon: Instagram,
-      href: "https://instagram.com/wonderminds", // Replace with actual Instagram
+      href: "https://www.instagram.com/wonderminds07/",
       bgColor: "bg-gradient-to-r from-purple-500 to-pink-500",
       hoverBgColor: "hover:from-purple-600 hover:to-pink-600",
       textColor: "text-white",
     },
     {
-      name: "Messenger",
+      name: "Facebook",
       icon: Facebook,
-      href: "https://m.me/wonderminds", // Replace with actual Messenger
+      href: "https://www.facebook.com/share/17E712AFgE/",
       bgColor: "bg-blue-600",
       hoverBgColor: "hover:bg-blue-700",
-      textColor: "text-white",
-    },
-    {
-      name: "Twitter",
-      icon: Twitter,
-      href: "https://twitter.com/wonderminds", // Replace with actual Twitter
-      bgColor: "bg-blue-400",
-      hoverBgColor: "hover:bg-blue-500",
       textColor: "text-white",
     },
   ];
@@ -86,6 +77,8 @@ const Footer = () => {
                 className="w-auto h-auto"
                 quality={90}
                 sizes="(max-width: 768px) 250px, 400px"
+                loading="lazy"
+                placeholder="empty"
               />
             </Link>
           </motion.div>
@@ -155,15 +148,13 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-violet-600" />
                 <span className="text-sm text-muted-foreground">
-                  123 Education Street
-                  <br />
-                  Learning City, LC 12345
+                  Ferdaws Mosque, Al Khobar, SA
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-violet-600" />
                 <span className="text-sm text-muted-foreground">
-                  +1 (555) 123-4567
+                  +966 51 053 2513, +966 50 876 9635
                 </span>
               </div>
               <div className="flex items-center space-x-3">

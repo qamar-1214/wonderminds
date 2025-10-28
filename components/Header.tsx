@@ -60,6 +60,7 @@ const Header = () => {
                 priority
                 quality={90}
                 sizes="(max-width: 768px) 150px, 200px"
+                placeholder="empty"
               />
             </Link>
           </motion.div>
@@ -130,7 +131,7 @@ const Header = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <Button asChild className="btn-primary">
-                <Link href="/contact">Book Appointment</Link>
+                <Link href="/booking">Book Appointment</Link>
               </Button>
             </motion.div>
           </div>
@@ -195,7 +196,7 @@ const Header = () => {
                 </div>
                 <div className="flex-shrink-0 p-4 border-t bg-background">
                   <Button asChild className="btn-primary w-full">
-                    <Link href="/contact" onClick={() => setIsOpen(false)}>
+                    <Link href="/booking" onClick={() => setIsOpen(false)}>
                       Book Appointment
                     </Link>
                   </Button>

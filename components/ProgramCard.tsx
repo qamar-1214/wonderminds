@@ -106,6 +106,7 @@ const ProgramCard = ({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true }}
       whileHover={{ y: -5 }}
       className="group"
     >
@@ -117,6 +118,8 @@ const ProgramCard = ({
             alt={`${title} program at WonderMinds`}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            placeholder="empty"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
