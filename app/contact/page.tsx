@@ -221,10 +221,11 @@ const Contact = () => {
                   What are your operating hours?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                  We operate Monday through Friday from 7:00 AM to 6:00 PM, and
-                  Saturday from 8:00 AM to 2:00 PM. We also offer extended care
-                  options for working parents who need earlier drop-off or later
-                  pick-up times. We are closed on Sundays and major holidays.
+                  We operate Sunday through Thursday from 6:00 AM to 6:00 PM,
+                  and Saturday from 8:00 AM to 2:00 PM. We also offer extended
+                  care options for working parents who need earlier drop-off or
+                  later pick-up times. We are closed on Sundays and major
+                  holidays.
                 </AccordionContent>
               </AccordionItem>
 
@@ -281,7 +282,7 @@ const Contact = () => {
                   How do I schedule a tour?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                  You can schedule a tour by calling us at (555) 123-4567,
+                  You can schedule a tour by calling us at +966 51 053 2513,
                   emailing info@wonderminds.com, or using our online contact
                   form. We offer tours Monday through Friday and can accommodate
                   your schedule. Tours typically last 30-45 minutes.

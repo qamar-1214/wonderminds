@@ -27,7 +27,7 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: "1",
-      src: "/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg",
+      src: "/images/img1.jpeg",
       alt: "Bright and colorful classroom with learning centers",
       title: "Learning Centers",
       description:
@@ -35,7 +35,7 @@ const Gallery = () => {
     },
     {
       id: "2",
-      src: "/images/cdc-UqTrGSohyCs-unsplash.jpg",
+      src: "/images/img2.jpeg",
       alt: "Outdoor playground with safe equipment",
       title: "Outdoor Playground",
       description:
@@ -43,7 +43,7 @@ const Gallery = () => {
     },
     {
       id: "3",
-      src: "/images/changbok-ko-F8t2VGnI47I-unsplash.jpg",
+      src: "/images/img3.jpeg",
       alt: "Art studio with children creating artwork",
       title: "Art Studio",
       description:
@@ -51,7 +51,7 @@ const Gallery = () => {
     },
     {
       id: "4",
-      src: "/images/drahomir-hugo-posteby-mach-n4y3eiQSIoc-unsplash.jpg",
+      src: "/images/img4.jpeg",
       alt: "Cozy library corner with books and reading nooks",
       title: "Library Corner",
       description:
@@ -59,7 +59,7 @@ const Gallery = () => {
     },
     {
       id: "5",
-      src: "/images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg",
+      src: "/images/img5.jpeg",
       alt: "Science exploration area with hands-on activities",
       title: "Science Exploration",
       description:
@@ -67,7 +67,7 @@ const Gallery = () => {
     },
     {
       id: "6",
-      src: "/images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg",
+      src: "/images/img6.jpeg",
       alt: "Music room with instruments and children singing",
       title: "Music & Movement",
       description:
@@ -75,7 +75,7 @@ const Gallery = () => {
     },
     {
       id: "7",
-      src: "/images/laura-rivera-ArH3dtoDQc0-unsplash.jpg",
+      src: "/images/img7.jpeg",
       alt: "Cafeteria with children enjoying healthy meals",
       title: "Healthy Meals",
       description:
@@ -83,43 +83,11 @@ const Gallery = () => {
     },
     {
       id: "8",
-      src: "/images/nathan-cima-Qw6wa96IvvQ-unsplash.jpg",
+      src: "/images/img8.jpeg",
       alt: "Quiet nap room with comfortable sleeping areas",
       title: "Rest Time",
       description:
         "Comfortable and peaceful spaces for children to rest and recharge during the day.",
-    },
-    {
-      id: "9",
-      src: "/images/national-cancer-institute-N_aihp118p8-unsplash.jpg",
-      alt: "Outdoor garden where children learn about nature",
-      title: "Nature Garden",
-      description:
-        "Outdoor garden spaces where children learn about plants, insects, and environmental care.",
-    },
-    {
-      id: "10",
-      src: "/images/note-thanun-hQXmjNi2baA-unsplash.jpg",
-      alt: "Technology center with age-appropriate computers",
-      title: "Technology Center",
-      description:
-        "Age-appropriate technology tools that enhance learning and digital literacy.",
-    },
-    {
-      id: "11",
-      src: "/images/priscilla-du-preez-ggeZ9oyI-PE-unsplash.jpg",
-      alt: "Children working together on group projects",
-      title: "Collaborative Learning",
-      description:
-        "Group activities that promote teamwork, communication, and social skills development.",
-    },
-    {
-      id: "12",
-      src: "/images/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg",
-      alt: "Children celebrating achievements and special events",
-      title: "Celebrations",
-      description:
-        "Special moments and celebrations that create lasting memories and build community.",
     },
   ];
 
@@ -273,7 +241,7 @@ const Gallery = () => {
             images={galleryImages}
             title="Learning Spaces & Activities"
             description="Explore our facilities and see children engaged in various learning activities throughout the day."
-            showLightbox={true}
+            // showLightbox={true}
           />
         </div>
       </section>

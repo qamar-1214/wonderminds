@@ -95,8 +95,7 @@ const Home = () => {
       duration: "Full Day",
       capacity: "8 children",
       rating: 4.9,
-      image:
-        "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "/images/img1.jpeg",
       features: [
         "Individualized feeding schedules",
         "Sensory play activities",
@@ -113,8 +112,7 @@ const Home = () => {
       duration: "Half/Full Day",
       capacity: "16 children",
       rating: 4.9,
-      image:
-        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "/images/img2.jpeg",
       features: [
         "Pre-literacy skills",
         "Math concepts",
@@ -131,8 +129,7 @@ const Home = () => {
       duration: "Full Day",
       capacity: "18 children",
       rating: 4.9,
-      image:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "/images/img3.jpeg",
       features: [
         "Reading and writing",
         "Mathematics",
@@ -146,7 +143,7 @@ const Home = () => {
   const galleryImages = [
     {
       id: "1",
-      src: "/images/changbok-ko-F8t2VGnI47I-unsplash.jpg",
+      src: "/images/img1.jpeg",
       alt: "Bright and colorful classroom with learning centers",
       title: "Learning Centers",
       description:
@@ -154,35 +151,35 @@ const Home = () => {
     },
     {
       id: "2",
-      src: "/images/drahomir-hugo-posteby-mach-n4y3eiQSIoc-unsplash.jpg",
+      src: "/images/img2.jpeg",
       alt: "Outdoor playground with safe equipment",
       title: "Outdoor Playground",
       description: "Safe and engaging outdoor spaces for physical development.",
     },
     {
       id: "3",
-      src: "/images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg",
+      src: "/images/img3.jpeg",
       alt: "Art studio with children creating artwork",
       title: "Art Studio",
       description: "Creative spaces for artistic expression and development.",
     },
     {
       id: "4",
-      src: "/images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg",
+      src: "/images/img4.jpeg",
       alt: "Cozy library corner with books and reading nooks",
       title: "Library Corner",
       description: "A quiet space to foster a love of reading and literacy.",
     },
     {
       id: "5",
-      src: "/images/laura-rivera-ArH3dtoDQc0-unsplash.jpg",
+      src: "/images/img5.jpeg",
       alt: "Science exploration area with hands-on activities",
       title: "Science Exploration",
       description: "Hands-on science activities that spark curiosity.",
     },
     {
       id: "6",
-      src: "/images/nathan-cima-Qw6wa96IvvQ-unsplash.jpg",
+      src: "/images/img6.jpeg",
       alt: "Music room with instruments and children singing",
       title: "Music & Movement",
       description:
@@ -196,28 +193,28 @@ const Home = () => {
       title: "Nurturing Care",
       description:
         "We provide a warm, loving environment where every child feels valued and supported.",
-      image: "/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg",
+      image: "/images/img1.jpeg",
     },
     {
       icon: BookOpen,
       title: "Quality Education",
       description:
         "Our curriculum fosters creativity, critical thinking, and a lifelong love of learning.",
-      image: "/images/cdc-UqTrGSohyCs-unsplash.jpg",
+      image: "/images/img2.jpeg",
     },
     {
       icon: Users,
       title: "Small Class Sizes",
       description:
         "Low student-to-teacher ratios ensure personalized attention for every child.",
-      image: "/images/changbok-ko-F8t2VGnI47I-unsplash.jpg",
+      image: "/images/img3.jpeg",
     },
     {
       icon: Star,
       title: "Experienced Teachers",
       description:
         "All our teachers are certified and have extensive experience in early childhood education.",
-      image: "/images/drahomir-hugo-posteby-mach-n4y3eiQSIoc-unsplash.jpg",
+      image: "/images/img4.jpeg",
     },
   ];
 
@@ -290,7 +287,7 @@ const Home = () => {
             >
               <div className="relative w-full h-96 rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/national-cancer-institute-N_aihp118p8-unsplash.jpg"
+                  src="/images/img1.jpeg"
                   alt="Children learning at WonderMinds"
                   fill
                   className="object-cover"
@@ -448,12 +445,7 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <GalleryGrid
-            images={galleryImages}
-            title=""
-            description=""
-            showLightbox={true}
-          />
+          <GalleryGrid images={galleryImages} title="" description="" />
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -564,7 +556,7 @@ const Home = () => {
                   What are your operating hours?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                  We operate Monday through Friday from 7:00 AM to 6:00 PM. We
+                  We operate Sunday through Thursday from 6:00 AM to 6:00 PM. We
                   also offer extended care options for working parents who need
                   earlier drop-off or later pick-up times. We are closed on
                   weekends and major holidays.
@@ -625,7 +617,7 @@ const Home = () => {
                   How can I schedule a tour?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                  You can schedule a tour by calling us at (555) 123-4567,
+                  You can schedule a tour by calling us at +966 51 053 2513,
                   emailing info@wonderminds.com, or using our online contact
                   form. We offer tours Monday through Friday and can accommodate
                   your schedule. Tours typically last 30-45 minutes.

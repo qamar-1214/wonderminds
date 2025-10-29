@@ -37,7 +37,7 @@ const Programs = () => {
       duration: "Full Day",
       capacity: "8 children",
       rating: 4.9,
-      image: "/images/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg",
+      image: "/images/img1.jpeg",
       features: [
         "Secure baby rooms with soft lighting and baby-proofed play areas",
         "Bonding through touch, music, and sensory play",
@@ -54,7 +54,7 @@ const Programs = () => {
       duration: "Full Day",
       capacity: "12 children",
       rating: 4.8,
-      image: "/images/unseen-studio-s9CC2SKySJM-unsplash.jpg",
+      image: "/images/img2.jpeg",
       features: [
         "Structured daily routine (play, meals, nap, exploration)",
         "Sensory-rich classrooms with early literacy exposure",
@@ -72,7 +72,7 @@ const Programs = () => {
       duration: "Half/Full Day",
       capacity: "16 children",
       rating: 4.9,
-      image: "/images/zachary-keimig-nxJgmZfLcJI-unsplash.jpg",
+      image: "/images/img3.jpeg",
       features: [
         "Phonics and pre-reading programs",
         "Counting, sorting, and number concepts through games",
@@ -89,7 +89,7 @@ const Programs = () => {
       duration: "Full Day",
       capacity: "18 children",
       rating: 4.9,
-      image: "/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg",
+      image: "/images/img4.jpeg",
       features: [
         "Academic readiness: reading, writing, math, and inquiry-based learning",
         "Early STEM activities, puzzles, and problem-solving tasks",
@@ -106,7 +106,7 @@ const Programs = () => {
       duration: "Full Day",
       capacity: "15 children",
       rating: 4.9,
-      image: "/images/cdc-UqTrGSohyCs-unsplash.jpg",
+      image: "/images/img5.jpeg",
       features: [
         "Academic support: homework help, reading fluency, math reinforcement",
         "Skill development: creative writing, science projects, public speaking",

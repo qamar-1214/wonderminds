@@ -62,22 +62,7 @@ const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Array of HD background images for auto-scrolling
-  const backgroundImages = [
-    "/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg",
-    "/images/cdc-UqTrGSohyCs-unsplash.jpg",
-    "/images/changbok-ko-F8t2VGnI47I-unsplash.jpg",
-    "/images/drahomir-hugo-posteby-mach-n4y3eiQSIoc-unsplash.jpg",
-    "/images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg",
-    "/images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg",
-    "/images/laura-rivera-ArH3dtoDQc0-unsplash.jpg",
-    "/images/nathan-cima-Qw6wa96IvvQ-unsplash.jpg",
-    "/images/national-cancer-institute-N_aihp118p8-unsplash.jpg",
-    "/images/note-thanun-hQXmjNi2baA-unsplash.jpg",
-    "/images/priscilla-du-preez-ggeZ9oyI-PE-unsplash.jpg",
-    "/images/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg",
-    "/images/unseen-studio-s9CC2SKySJM-unsplash.jpg",
-    "/images/zachary-keimig-nxJgmZfLcJI-unsplash.jpg",
-  ];
+  const backgroundImages = ["/images/main1.jpeg", "/images/main2.jpeg"];
 
   // Auto-scroll background images every 4 seconds
   useEffect(() => {
@@ -222,7 +207,7 @@ const Hero = () => {
           >
             <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden">
               <Image
-                src="/images/laura-rivera-ArH3dtoDQc0-unsplash.jpg"
+                src="/images/img1.jpeg"
                 alt="Children at WonderMinds enjoying learning activities"
                 fill
                 className="object-cover"

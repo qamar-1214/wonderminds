@@ -83,22 +83,7 @@ const About = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Array of HD background images for auto-scrolling
-  const backgroundImages = [
-    "/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg",
-    "/images/cdc-UqTrGSohyCs-unsplash.jpg",
-    "/images/changbok-ko-F8t2VGnI47I-unsplash.jpg",
-    "/images/drahomir-hugo-posteby-mach-n4y3eiQSIoc-unsplash.jpg",
-    "/images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg",
-    "/images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg",
-    "/images/laura-rivera-ArH3dtoDQc0-unsplash.jpg",
-    "/images/nathan-cima-Qw6wa96IvvQ-unsplash.jpg",
-    "/images/national-cancer-institute-N_aihp118p8-unsplash.jpg",
-    "/images/note-thanun-hQXmjNi2baA-unsplash.jpg",
-    "/images/priscilla-du-preez-ggeZ9oyI-PE-unsplash.jpg",
-    "/images/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg",
-    "/images/unseen-studio-s9CC2SKySJM-unsplash.jpg",
-    "/images/zachary-keimig-nxJgmZfLcJI-unsplash.jpg",
-  ];
+  const backgroundImages = ["/images/main1.jpeg", "/images/main2.jpeg"];
 
   // Auto-scroll background images every 4 seconds
   useEffect(() => {
@@ -289,7 +274,7 @@ const About = () => {
             >
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/laura-rivera-ArH3dtoDQc0-unsplash.jpg"
+                  src="/images/main1.jpeg"
                   alt="Children learning together in classroom"
                   fill
                   className="object-cover"
@@ -317,7 +302,7 @@ const About = () => {
             >
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/nathan-cima-Qw6wa96IvvQ-unsplash.jpg"
+                  src="/images/main2.jpeg"
                   alt="Children playing and learning in outdoor environment"
                   fill
                   className="object-cover"
@@ -416,7 +401,7 @@ const About = () => {
               className="relative group overflow-hidden rounded-2xl shadow-lg"
             >
               <Image
-                src="/images/national-cancer-institute-N_aihp118p8-unsplash.jpg"
+                src="/images/img1.jpeg"
                 alt="Modern classroom with children learning"
                 width={400}
                 height={300}
@@ -442,7 +427,7 @@ const About = () => {
               className="relative group overflow-hidden rounded-2xl shadow-lg"
             >
               <Image
-                src="/images/note-thanun-hQXmjNi2baA-unsplash.jpg"
+                src="/images/img2.jpeg"
                 alt="Children playing in outdoor playground"
                 width={400}
                 height={300}
@@ -468,7 +453,7 @@ const About = () => {
               className="relative group overflow-hidden rounded-2xl shadow-lg"
             >
               <Image
-                src="/images/priscilla-du-preez-ggeZ9oyI-PE-unsplash.jpg"
+                src="/images/img3.jpeg"
                 alt="Children reading in library corner"
                 width={400}
                 height={300}
@@ -732,7 +717,7 @@ const About = () => {
                   What are your operating hours?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                  We operate Monday through Friday from 7:00 AM to 6:00 PM. We
+                  We operate Sunday through Thursday from 6:00 AM to 6:00 PM. We
                   also offer extended care options for working parents who need
                   earlier drop-off or later pick-up times. We are closed on
                   weekends and major holidays.
@@ -793,7 +778,7 @@ const About = () => {
                   How can I schedule a tour?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                  You can schedule a tour by calling us at (555) 123-4567,
+                  You can schedule a tour by calling us at +966 51 053 2513,
                   emailing info@wonderminds.com, or using our online contact
                   form. We offer tours Monday through Friday and can accommodate
                   your schedule. Tours typically last 30-45 minutes.
