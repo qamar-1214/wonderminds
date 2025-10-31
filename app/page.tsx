@@ -95,7 +95,7 @@ const Home = () => {
       duration: "Full Day",
       capacity: "8 children",
       rating: 4.9,
-      image: "/images/img1.jpeg",
+      image: "/images/programs/baby-daycare1.jpg",
       features: [
         "Individualized feeding schedules",
         "Sensory play activities",
@@ -112,7 +112,7 @@ const Home = () => {
       duration: "Half/Full Day",
       capacity: "16 children",
       rating: 4.9,
-      image: "/images/img2.jpeg",
+      image: "/images/programs/baby-daycare2.jpg",
       features: [
         "Pre-literacy skills",
         "Math concepts",
@@ -129,7 +129,7 @@ const Home = () => {
       duration: "Full Day",
       capacity: "18 children",
       rating: 4.9,
-      image: "/images/img3.jpeg",
+      image: "/images/programs/baby-daycare3.jpg",
       features: [
         "Reading and writing",
         "Mathematics",
@@ -143,7 +143,7 @@ const Home = () => {
   const galleryImages = [
     {
       id: "1",
-      src: "/images/img1.jpeg",
+      src: "/images/gallery/gallery1.jpg",
       alt: "Bright and colorful classroom with learning centers",
       title: "Learning Centers",
       description:
@@ -151,35 +151,35 @@ const Home = () => {
     },
     {
       id: "2",
-      src: "/images/img2.jpeg",
+      src: "/images/gallery/gallery2.jpg",
       alt: "Outdoor playground with safe equipment",
       title: "Outdoor Playground",
       description: "Safe and engaging outdoor spaces for physical development.",
     },
     {
       id: "3",
-      src: "/images/img3.jpeg",
+      src: "/images/gallery/gallery3.jpg",
       alt: "Art studio with children creating artwork",
       title: "Art Studio",
       description: "Creative spaces for artistic expression and development.",
     },
     {
       id: "4",
-      src: "/images/img4.jpeg",
+      src: "/images/gallery/gallery4.jpg",
       alt: "Cozy library corner with books and reading nooks",
       title: "Library Corner",
       description: "A quiet space to foster a love of reading and literacy.",
     },
     {
       id: "5",
-      src: "/images/img5.jpeg",
+      src: "/images/gallery/gallery5.jpg",
       alt: "Science exploration area with hands-on activities",
       title: "Science Exploration",
       description: "Hands-on science activities that spark curiosity.",
     },
     {
       id: "6",
-      src: "/images/img6.jpeg",
+      src: "/images/gallery/gallery6.jpg",
       alt: "Music room with instruments and children singing",
       title: "Music & Movement",
       description:
@@ -193,28 +193,28 @@ const Home = () => {
       title: "Nurturing Care",
       description:
         "We provide a warm, loving environment where every child feels valued and supported.",
-      image: "/images/img1.jpeg",
+      image: "/images/programs/baby-daycare3.jpg",
     },
     {
       icon: BookOpen,
       title: "Quality Education",
       description:
         "Our curriculum fosters creativity, critical thinking, and a lifelong love of learning.",
-      image: "/images/img2.jpeg",
+      image: "/images/hero/hero8.jpg",
     },
     {
       icon: Users,
       title: "Small Class Sizes",
       description:
         "Low student-to-teacher ratios ensure personalized attention for every child.",
-      image: "/images/img3.jpeg",
+      image: "/images/hero/hero1.jpg",
     },
     {
       icon: Star,
       title: "Experienced Teachers",
       description:
         "All our teachers are certified and have extensive experience in early childhood education.",
-      image: "/images/img4.jpeg",
+      image: "/images/hero/hero5.jpg",
     },
   ];
 
@@ -287,7 +287,7 @@ const Home = () => {
             >
               <div className="relative w-full h-96 rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/img1.jpeg"
+                  src="/images/hero/hero6.jpg"
                   alt="Children learning at WonderMinds"
                   fill
                   className="object-cover"

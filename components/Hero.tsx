@@ -62,7 +62,12 @@ const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Array of HD background images for auto-scrolling
-  const backgroundImages = ["/images/main1.jpeg", "/images/main2.jpeg"];
+  const backgroundImages = [
+    "/images/hero/hero1.jpg",
+    "/images/hero/hero2.jpg",
+    "/images/hero/hero3.jpg",
+    "/images/hero/hero4.jpg",
+  ];
 
   // Auto-scroll background images every 4 seconds
   useEffect(() => {
@@ -207,7 +212,7 @@ const Hero = () => {
           >
             <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden">
               <Image
-                src="/images/img1.jpeg"
+                src="/images/hero/hero5.jpg"
                 alt="Children at WonderMinds enjoying learning activities"
                 fill
                 className="object-cover"

@@ -83,7 +83,11 @@ const About = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Array of HD background images for auto-scrolling
-  const backgroundImages = ["/images/main1.jpeg", "/images/main2.jpeg"];
+  const backgroundImages = [
+    "/images/about/about1.jpg",
+    "/images/about/about2.jpg",
+    "/images/about/about3.jpg",
+  ];
 
   // Auto-scroll background images every 4 seconds
   useEffect(() => {
@@ -274,7 +278,7 @@ const About = () => {
             >
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/main1.jpeg"
+                  src="/images/about/about4.jpg"
                   alt="Children learning together in classroom"
                   fill
                   className="object-cover"
@@ -302,7 +306,7 @@ const About = () => {
             >
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/main2.jpeg"
+                  src="/images/about/about2.jpg"
                   alt="Children playing and learning in outdoor environment"
                   fill
                   className="object-cover"
@@ -398,16 +402,14 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="relative group overflow-hidden rounded-2xl shadow-lg"
+              className="group overflow-hidden rounded-2xl shadow-lg h-64 sm:h-72 md:h-80 lg:h-[22rem] relative"
             >
               <Image
-                src="/images/img1.jpeg"
+                src="/images/classroom1.jpg"
                 alt="Modern classroom with children learning"
-                width={400}
-                height={300}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                placeholder="empty"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -424,16 +426,14 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="relative group overflow-hidden rounded-2xl shadow-lg"
+              className="group overflow-hidden rounded-2xl shadow-lg h-64 sm:h-72 md:h-80 lg:h-[22rem] relative"
             >
               <Image
-                src="/images/img2.jpeg"
+                src="/images/gallery/gallery6.jpg"
                 alt="Children playing in outdoor playground"
-                width={400}
-                height={300}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                placeholder="empty"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -450,16 +450,14 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="relative group overflow-hidden rounded-2xl shadow-lg"
+              className="group overflow-hidden rounded-2xl shadow-lg h-64 sm:h-72 md:h-80 lg:h-[22rem] relative"
             >
               <Image
-                src="/images/img3.jpeg"
+                src="/images/hero/hero7.jpg"
                 alt="Children reading in library corner"
-                width={400}
-                height={300}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                placeholder="empty"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">

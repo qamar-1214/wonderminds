@@ -27,7 +27,7 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: "1",
-      src: "/images/img1.jpeg",
+      src: "/images/gallery/gallery1.jpg",
       alt: "Bright and colorful classroom with learning centers",
       title: "Learning Centers",
       description:
@@ -35,7 +35,7 @@ const Gallery = () => {
     },
     {
       id: "2",
-      src: "/images/img2.jpeg",
+      src: "/images/gallery/gallery2.jpg",
       alt: "Outdoor playground with safe equipment",
       title: "Outdoor Playground",
       description:
@@ -43,7 +43,7 @@ const Gallery = () => {
     },
     {
       id: "3",
-      src: "/images/img3.jpeg",
+      src: "/images/gallery/gallery3.jpg",
       alt: "Art studio with children creating artwork",
       title: "Art Studio",
       description:
@@ -51,7 +51,7 @@ const Gallery = () => {
     },
     {
       id: "4",
-      src: "/images/img4.jpeg",
+      src: "/images/gallery/gallery4.jpg",
       alt: "Cozy library corner with books and reading nooks",
       title: "Library Corner",
       description:
@@ -59,7 +59,7 @@ const Gallery = () => {
     },
     {
       id: "5",
-      src: "/images/img5.jpeg",
+      src: "/images/gallery/gallery5.jpg",
       alt: "Science exploration area with hands-on activities",
       title: "Science Exploration",
       description:
@@ -67,7 +67,7 @@ const Gallery = () => {
     },
     {
       id: "6",
-      src: "/images/img6.jpeg",
+      src: "//images/gallery/gallery6.jpg",
       alt: "Music room with instruments and children singing",
       title: "Music & Movement",
       description:
@@ -75,7 +75,7 @@ const Gallery = () => {
     },
     {
       id: "7",
-      src: "/images/img7.jpeg",
+      src: "/images/gallery/gallery7.jpg",
       alt: "Cafeteria with children enjoying healthy meals",
       title: "Healthy Meals",
       description:
@@ -83,7 +83,7 @@ const Gallery = () => {
     },
     {
       id: "8",
-      src: "/images/img8.jpeg",
+      src: "/images/gallery/gallery8.jpg",
       alt: "Quiet nap room with comfortable sleeping areas",
       title: "Rest Time",
       description:
